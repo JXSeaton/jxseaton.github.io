@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+/*  
+dark: 251351
+light: EFEFEF
+Grey: 776871
+
+Accent: F2BB05
+Accent: 17BEBB
+*/
+body {
+    background-color: #EFEFEF;
+}
+div > i {
+    color: #E9F3F4;
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+.me{
+    width:50%;
+}
+h1 {
+    position: relative;
+    margin-top: 30%;
+    text-align: center;
+    font-size: 5rem;
+    color: #251351;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    left: 47%;
+    bottom: 12px;
+    width: 350px;
+    height: 20px;
+    transform: skew(-12deg) translateX(-50%);
+    background: #17BEBB;
+    z-index: -1;
+}
+h1:hover::after{
+	content: "";
+		position: absolute;
+		left: 47%;bottom: 12px;
+		width: 350px;
+		height: 20px;
+		transform: skew(-12deg) translateX(-50%);
+		background: #F2BB05;
+		z-index: -1;
+}
+.container {
+    display: flex;
+}
+
+div#skills > div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+div#skills > div:nth-of-type(1){
+    top: 20%;
+    left: 60%;
+    background-color: #17BEBB;
+}
+div#skills > div:nth-of-type(2){
+    top: 30%;
+    left: 55%;
+    background-color: #F2BB05;
+}
+div#skills > div:nth-of-type(3){
+    top: 40%;
+    left: 70%;
+    background-color: #F2BB05;
+}
+div#skills > div:nth-of-type(4){
+    top: 50%;
+    left: 60%;
+    background-color: #17BEBB;
+}
+div#skills > div:nth-of-type(5){
+    top: 60%;
+    left: 80%;
+    background-color: #F2BB05;
+}
+div#skills > div:nth-of-type(6){
+    top: 70%;
+    left: 70%;
+    background-color: #F2BB05;
+}
+div#skills > div:nth-of-type(7){
+    top: 80%;
+    left: 80%;
+    background-color: #17BEBB;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+footer > a {
+    color: #776871;
+    margin: 15px;
+}
+footer>a:hover {
+	color: #17BEBB;
+}footer>a:active {
+	color: #F2BB05;
+}
+header ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul{
+	display: flex;
+	justify-content: space-evenly;
+}
+header a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: #776871;
+	text-decoration: none;
+}
+header a:hover {
+	font-weight: 200;
+	color: #17BEBB;
+}
+header a:active {
+	font-weight: 200;
+	color: #F2BB05;
+}
+a:visited{
+	color: #776871;
+}
