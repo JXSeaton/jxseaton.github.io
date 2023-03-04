@@ -1,4 +1,3 @@
-// mVEnBVdr34dVeF6
 const WIDTH = 60;
 const divArray = [];
 
