@@ -122,6 +122,13 @@ header a {
 	font-weight: 100;
 	color: #776871;
 	text-decoration: none;
+	background: no-repeat 0 100%;
+	background-image: linear-gradient(#F2BB05, #F2BB05);
+	background-size: 0% 2px;
+	transition: background-size .3s ease;
+}
+header a:hover, a:focus {
+	background-size: 100% 2px;
 }
 header a:hover {
 	font-weight: 200;
@@ -134,3 +141,19 @@ header a:active {
 a:visited{
 	color: #776871;
 }
+
+@media screen and (max-width: 800px) {
+	#skills{
+		display: none;
+	}
+	.me {
+		width: 100%;
+	}
+}
+
+
+/*
+References
+
+Fancy underlines: https://sharkcoder.com/visual/underline
+*/
