@@ -75,7 +75,6 @@ function moveMe(e){
 
 function makeDivObjects(){
     const divEls = document.querySelectorAll("div#skills > div");
-    console.log(divEls);
     for (const el of divEls){
         const tempObj = {
             el: el,
@@ -87,10 +86,7 @@ function makeDivObjects(){
 }
 
 // checking if the document is ready
-window.addEventListener("load", function (e) {
-    // checking for a mouse
-    if (matchMedia('(pointer:fine)').matches) {
-        makeDivObjects();
-        document.addEventListener("mousemove", moveMe);
-    }  
-});
+if (matchMedia('(pointer:fine)').matches) {
+	makeDivObjects();
+	document.addEventListener("mousemove", moveMe);
+}  
