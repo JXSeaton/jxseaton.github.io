@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+
+
+
+/* slide show below */
+.slideContainer {
+	position: relative;
+	width: 60%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slide {
+	display: none;
+	width: 100%;
+}
+
+.projectImg{
+	width: 100%;
+	max-height: 65vh;
+	margin: auto;
+	overflow: hidden;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  	background-color: rgba(0,0,0,0.8);
+}
+
+.dot{
+	text-align:center;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  	background-color: #717171;
+}
+
+.slideDots{
+	position:absolute;
+	left: calc(50% - 34px);
+	right: calc(50% - 34px);
+	bottom: 0;
+	padding-bottom: 5px;
+}
+
+.fade {
+	animation-name: fade;
+}
