@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/cv.css">
+	<script src="./js/cvResume.js" defer></script>
 	<title>J. Seaton</title>
 </head>
 <body>
@@ -18,8 +19,85 @@
 		</nav>
 	</header>
 	<div class="container">
+		<!-- Rounded switch -->
+		<div class="change-version">
+			<span id="cv-resume-text">CV Version</span>
+			<label class="switch">
+				<input id="toggle" type="checkbox">
+				<span class="slider round"></span>
+			</label>
+		</div>
+
 		<h2>J. SEATON</h2>
 		<p class="noSpace">j.xseaton@gmail.com</p>
+
+		<div id="resume">
+			<h3>PROFESSIONAL SUMMARY</h3>
+			<p class="noSpace">Researcher, software developer, and instructor with a proven track record in web development, user research, educational technology, and game-based learning. Expertise in creating innovative, user-centered applications that enhance learning experiences through gamification and data analytics. Committed to leveraging technical skills and teaching experience to drive results in a tech-oriented environment.</p>
+
+			<h3>TECHNICAL SKILLS</h3>
+			<ul>
+				<li>Programming Languages: JavaScript, Python, Java, C++, C#, SQL</li>
+				<li>Web Development: HTML5, CSS3, React, Vue, Node.js, JQuery</li>
+				<li>Data Analytics Tools: Tableau, Excel, Python, R</li>
+				<li>Development Practices: Agile methodologies (Scrum), UX design, gamification</li>
+				<li>Database Management: MySQL, No-SQL databases</li>
+				<li>Project Management Tools: GitHub, Figma, Balsamiq</li>
+				<li>Software Development: LMS development, game development, project supervision, curriculum design</li>
+			</ul>
+
+			<h3>PROFESSIONAL EXPERIENCE</h3>
+			<p class="subtitle noSpace">Saskatchewan Polytechnic, Saskatoon, SK</p>
+			<p class="noSpace">Instructor, Software Developer Program (2022 – Present)</p>
+			<ul class="indent">
+				<li>Designed and delivered courses in UX, web development, and project management, emphasizing best practices in user-centered design.</li>
+				<li>Collaborated with business stakeholders to create five applied research projects, securing over $100,000 in research funding and gaining employment for 5 students in one year.</li>
+				<li>Conducted educational research and user behavior analysis to optimize course content.</li>
+				<li>Developed and managed learning experiences, aligning with industry trends and educational best practices.</li>
+			</ul>
+			<br />
+			<p class="subtitle noSpace">Juno College, Toronto, ON</p>
+			<p class="noSpace">Instructor, Web Development and Data Analytics (2021 – 2022)</p>
+			<ul class="indent">
+				<li>Led multiple bootcamp cohorts, teaching advanced web development and data analytics, providing personalized mentoring to enhance learner outcomes.</li>
+				<li>Developed an engaging capstone project that allowed students to create real-world applications, contributing to a 90% student hire rate.</li>
+			</ul>
+			<br />
+			<p class="subtitle noSpace">Freelance Writer</p>
+			<p class="noSpace">Remote (2020 - 2022)</p>
+			<ul class="indent">
+				<li>Authored articles, blog posts, and other written content on a variety of topics, demonstrating strong writing skills and versatility</li>
+				<li>Conducted thorough research to produce well-informed and engaging content, leveraging my analytical abilities.</li>
+				<li>Utilized SEO best practices to enhance the visibility and reach of written content.</li>
+				<li>Provided editing and proofreading services to ensure clarity, coherence, and grammatical accuracy of content. Enhanced the quality of clients’ work by improving structure, style, and overall readability.</li>
+			</ul>
+			<br />
+			<p class="subtitle noSpace">Athabasca University, Athabasca, AB </p>
+			<p class="noSpace">Postdoctoral Researcher, School of Computing and Information Systems (2017 – 2018)</p>
+			<ul class="indent">
+				<li>Conducted extensive UX research on gamified educational systems.</li>
+				<li>Research player experience in-game decision-making and enhance user engagement.</li>
+				<li>Utilized simulation to predict and test user interaction patterns based on different educational designs.</li>
+				<li>Developed a multiplayer educational game (OMEGA) to enhance metacognitive skills using learning analytics.</li>
+				<li>Presented findings at international conferences and published in peer-reviewed journals.</li>
+			</ul>
+			<h3>PROJECTS & INITIATIVES</h3>
+			<p class="subtitle noSpace">Levis Media: PRISM Development/Enhancements</p>
+			<p class="noSpace">Optimizing module extension capabilities to accelerate the development of new applications by leveraging existing features and modules.</p>
+			<br />
+			<p class="subtitle noSpace">Elev8 Dance: Customization extendabitlity for elev8.dance</p>
+			<p class="noSpace">Lead a project ($45,000) to customize dance competition software. The project involves designing custom UI to accommodate diverse user-base requirements.</p>
+			<br />
+			<p class="subtitle noSpace">First Filter: Optimizing a retail point-of-service system for cross referenced inventory</p>
+			<p class="noSpace">Consulted on a research project ($30,000) to create a POS with an innovative database that leverages graph databases to organize product information on cross references as opposed to traditional relational methods.</p>
+			<br />
+			<p class="subtitle noSpace">Levis Media: PRISM DevOps Enhancement</p>
+			<p class="noSpace">Managed an applied research initiative funded by Mitacs ($30,000), successfully improving the companies CI/CD pipeline by automating testing.</p>
+			<br />
+		</div>
+
+		<!-- EDUCATION -->
+
 		<h3>EDUCATION</h3>
 		<p class="subtitle noSpace">2016 University of Saskatchewan, Saskatoon, SK</p>
 		<p class="noSpace">Ph.D. in Interdisciplinary Studies</p>
@@ -33,103 +111,140 @@
 		<p class="subtitle noSpace">2005 University of Lethbridge</p>
 		<p class="noSpace">B.A. in Anthropology</p>
 
-		<h3>WORK EXPERIENCE</h3>
-		<p class=subtitle noSpace">July 2022 – Current</p>
-		<p class="noSpace">Saskatchewan Polytechnic, Saskatoon, SK</p>
-		<p class="noSpace">Instructor, Software Developer Program</p>
-		<br />
-		<p class="subtitle noSpace">May 2021 – June 2022</p>
-		<p class="noSpace">Juno College, Toronto, ON</p>
-		<p class="noSpace">Instructor, Web Development and Data Analytics</p>
-		<br />
-		<p class="subtitle noSpace">July 2017 – July 2018</p>
-		<p class="noSpace">Athabasca University, Athabasca, AB</p>
-		<p class="noSpace">Postdoctoral Fellowship, School of Computing and Information Systems</p>
-		
-		<h3>PUBLICATIONS</h3>
-		<h4>BOOK CHAPTERS</h4>
-		<p>Seaton, J. X, Chang, M., & Graf, S. (2019) Integrating a Learning Dashboard in an Online Educational Game. Data
-		Analytics Approaches in Educational Games and Gamification Systems. Springer: Singapore 127-138</p>
-		<h4>REFEREED PUBLICATIONS</h4>
-		<p>Hunter, P. V., Delbaere, M., O’Connell, M. E., Cammer, A., Seaton, J. X, Friedrich, T., & Fick, F. (2017). Did online
-		publishers “get it right”? Using a naturalistic search strategy to review cognitive health promotion content on internet
-		webpages. BMC Geriatrics, 17(1), 125</p>
-		<p>Seaton, J. X, & Schwier, R. (2014). An exploratory case study of online instructors: Factors Associated with Instructor
-		Engagement. International Journal of E-Learning & Distance Education, 29(1)</p>
-		<p>Morrison, D., & Seaton, J. X (2014). Exploring self-directed learning in an online “do-it-yourself” forum. International
-		Journal of Self-Directed Learning, 11(2), 29-45</p>
-		<p>Boden, C., Nelison, C., & Seaton, J. X (2013). Evaluation of a research method for evaluating literature search
-		training: A pilot study using screen capture tutorials. Medical Reference Services Quarterly, 32(3).</p>
-		<p>Schwier, R.A., & Seaton, J. X (2013). Participation patterns in selected formal, non-formal, and informal online
-		learning environments. Canadian Journal of Learning and Technology, 9(1), 1-15</p>
-		<h4>REFEREED CONFERENCE PROCEEDINGS</h4>
-		<p>Chang, M., Graf, S., Seaton, J. X, McQuoid, S., & Ross, T. (2019). OMEGA: A Multiplayer Online Game for Improving User’s
-		Meta-Cognitive Skills. In IEEE International Conference for Technology for Education 2019.</p>
-		<p>Seaton, J. X, Graf, S., Chang, M. & Farahmand (2018). Incorporating Learning Analytics in an Educational Game to Provide
-		Players with Information about how to Improve their Performance. In IEEE International Conference on Advanced Learning
-		Technologies 2018. Mumbai</p>
-		<p>Seaton, J. X, Traves, J., McCalla, G. & Schwier, R. (2013). Designing an Incentive-Based Online Education System to
-		Encourage Student Collaboration. In Jan Herrington et al. (Eds.), Proceedings of World Conference on Educational
-		Multimedia, Hypermedia and Telecommunications 2013 (pp. 1364-1371). Chesapeake, VA: AACE.</p>
-		<h3>PRESENTATIONS</h3>
-		<h4>KEYNOTE</h4>
-		<p>Seaton, J. X (2015). The importance of research dissemination for theory and practice. The University of Saskatchewan
-		Celebration of Research 2015. Saskatoon, SK.</p>
-		<h4>INVITED TALKS</h4>
-		<p>Seaton, J. X (2014). Online Instructors at the University of Regina: Who are they and are they Satisfied? University of
-		Regina.</p>
-		<h4>CONFERENCE PRESENTATIONS</h4>
-		<p>Seaton, J. X, Schwier, R. (2014). Engagement, Satisfaction, and Time Management Skills of Online Instructors. COHERE
-		2014</p>
-		<p>Boden, C., Seaton, J. X, & Nelison, C. (2014). Screen-capture tutorials: How well do students learn from them? CHLA/ABSC
-		2014: Scaling New Heights Together</p>
-		<p>Hirschkorn, M., Sears, A., Lemisko, L., Seaton, J. (2014, May). The Struggle to Study Teacher Education Nationally.
-		CSSE/SCÉÉ 2014.</p>
-		<p>Morrison, D., Seaton, J. (2014, February). DIY Forums: Exploring SDL, Participation Patterns and Content for Emergent
-		VLCs. International Society for Self-Directed Learning. Cocoa Beach, FL.</p>
-		<p>Seaton, J. X (May 2013). A case study of online instructors: Identifying challenges. TLT 2013: Everyone is doing IT</p>
-		<p>Boden, C., Nelison, C., & Seaton, J. X (2012). Methodology for examining the efficacy of screen-capture tutorials: A
-		pilot study. CHLA/ABSC 2012: Cascade of Knowledge</p>
-		<p>Schwier, R.A., & Seaton, J. X (2011). A comparison of participation patterns in selected formal, non-formal, and
-		informal online learning environments. Proceedings of the Annual Conference of the Association for Educational
-		Communications and Technology.</p>
-		<p>Seaton, J. (2008). Struggling with Our Own Ethnicity: The Lack of North American Ethnic Identity. Presented at the
-		University of Lethbridge for an Interdisciplinary Conference (Ethnicity: Theory and Practice in the 21st Century, Sept
-		2008)</p>
-		<h4>POSTERS</h4>
-		<p>Hunter, P.; Seaton, J.; Delbaere, M.; O’Connell, M.; Cammer, A.; Friedrich, T.; Fick, F. (2016). Did they get it right?
-		The extent and quality of internet-based information about the role of lifestyle in cognitive health. CPA Annual
-		Convention</p>
-		<p>Friedrick T., Seaton J., Hunter P., Elias L., O’Connell M., Delbaere M., Cammer A. (2015). Research Protocol: Evaluation
-		of Alzheimer Organizations’ Websites with Eye Tracking. Knowledge Network in Rural and Remote Dementia Care Summit 8</p>
-		<h3>AWARDS AND HONOURS</h3>
-		<p>2016 Nominated for Teaching Excellence Award at the University of Saskatchewan (Student Nominated)</p>
-		<p>2008 Queen Elisabeth II Graduate Student Scholarship ($3,600)</p>
-		<p>2003 Spirit of Leadership at Mount Royal Award</p>
-		
-		<h4>POST-SECONDARY TEACHING EXPERIENCE</h4>
-		<p>SESSIONAL INSTRUCTOR: COMPUTER SCIENCE DEPARTMENT – University of Saskatchewan</p>
-		<p class="noSpace">Introduction to Computer Science and Programming (Python)</p>
-		<p class="noSpace">Fall 2016</p>
-		<br />
-		<p class="noSpace">Introduction to Computer Science and Programming (C++)</p>
-		<p class="noSpace">Summer 2015 & 2016</p>
-		<br />
-		<p class="noSpace">Principles of Programming (C++)</p>
-		<p class="noSpace">Summer 2016</p>
-		<br />
-		<p class="noSpace">Introduction to Computing (Scratch)</p>
-		<p class="noSpace">Winter 2016</p>
-		<p>SESSIONAL INSTRUCTOR: UNIVERSITY TRANSITION PROGRAM – University of Saskatchewan</p>
-		<p class="noSpace">Learning to Learn: Strategies for Academic Success</p>
-		<p class="noSpace">Fall 2016 (3 sections), 2015, & 2014</p>
-		<br />
-		<p class="noSpace">Digital Document Processing</p>
-		<p class="noSpace">Winter 2014</p>
-		<h4>GRADUATE TEACHING ASSISTANT: DEPARTMENT OF EDUCATION – University of Saskatchewan</h4>
-		<p class="noSpace">Graduate course in the Foundations of Education (Online)</p>
-		<p class="noSpace">Facilitated the course</p>
-		<p class="noSpace">Winter 2015 & 2018</p>
+		<div id="cv">
+			<!-- WORK EXPERIENCE -->
+			<h3>WORK EXPERIENCE</h3>
+			<p class="subtitle noSpace">July 2022 – Current</p>
+			<p class="noSpace">Saskatchewan Polytechnic, Saskatoon, SK</p>
+			<p class="noSpace">Instructor, Software Developer Program</p>
+			<br />
+			<p class="subtitle noSpace">May 2021 – June 2022</p>
+			<p class="noSpace">Juno College, Toronto, ON</p>
+			<p class="noSpace">Instructor, Web Development and Data Analytics</p>
+			<br />
+			<p class="subtitle noSpace">July 2017 – July 2018</p>
+			<p class="noSpace">Athabasca University, Athabasca, AB</p>
+			<p class="noSpace">Postdoctoral Fellowship, School of Computing and Information Systems</p>
+			
+			<!-- RESEARCH GRANTS -->
+			
+			<h3>RESEARCH GRANTS</h3>
+			<p class="subtitle noSpace">Mitacs $15,000</p>
+			<p class="noSpace">April 2025 – August 2025</p>
+			<p class="noSpace">Levis Media: PRISM Development/Enhancements</p>
+			<br />
+			<p class="subtitle noSpace">Mitacs $45,000</p>
+			<p class="noSpace">November 2024 – November 2025</p>
+			<p class="noSpace">Elev8 Dance: Customization extendabitlity for elev8.dance</p>
+			<br />
+			<p class="subtitle noSpace">Mitacs $30,000</p>
+			<p class="noSpace">August 2024 – April 2025</p>
+			<p class="noSpace">First Filter: Optimizing a retail point-of-service system for cross referenced inventory</p>
+			<br />
+			<p class="subtitle noSpace">Mitacs $30,000</p>
+			<p class="noSpace">July 2024 – March 2025</p>
+			<p class="noSpace">Levis Media: PRISM DevOps Enhancement</p>
+			<br />
+
+			<!-- PUBLICATIONS -->
+
+			<h3>PUBLICATIONS</h3>
+
+			<h4>BOOK CHAPTERS</h4>
+			<p>Seaton, J. X, Chang, M., & Graf, S. (2019) Integrating a Learning Dashboard in an Online Educational Game. Data
+			Analytics Approaches in Educational Games and Gamification Systems. Springer: Singapore 127-138</p>
+
+			<h4>REFEREED PUBLICATIONS</h4>
+			<p>Hunter, P. V., Delbaere, M., O’Connell, M. E., Cammer, A., Seaton, J. X, Friedrich, T., & Fick, F. (2017). Did online
+			publishers “get it right”? Using a naturalistic search strategy to review cognitive health promotion content on internet
+			webpages. BMC Geriatrics, 17(1), 125</p>
+			<p>Seaton, J. X, & Schwier, R. (2014). An exploratory case study of online instructors: Factors Associated with Instructor
+			Engagement. International Journal of E-Learning & Distance Education, 29(1)</p>
+			<p>Morrison, D., & Seaton, J. X (2014). Exploring self-directed learning in an online “do-it-yourself” forum. International
+			Journal of Self-Directed Learning, 11(2), 29-45</p>
+			<p>Boden, C., Nelison, C., & Seaton, J. X (2013). Evaluation of a research method for evaluating literature search
+			training: A pilot study using screen capture tutorials. Medical Reference Services Quarterly, 32(3).</p>
+			<p>Schwier, R.A., & Seaton, J. X (2013). Participation patterns in selected formal, non-formal, and informal online
+			learning environments. Canadian Journal of Learning and Technology, 9(1), 1-15</p>
+
+			<h4>REFEREED CONFERENCE PROCEEDINGS</h4>
+			<p>Chang, M., Graf, S., Seaton, J. X, McQuoid, S., & Ross, T. (2019). OMEGA: A Multiplayer Online Game for Improving User’s
+			Meta-Cognitive Skills. In IEEE International Conference for Technology for Education 2019.</p>
+			<p>Seaton, J. X, Graf, S., Chang, M. & Farahmand (2018). Incorporating Learning Analytics in an Educational Game to Provide
+			Players with Information about how to Improve their Performance. In IEEE International Conference on Advanced Learning
+			Technologies 2018. Mumbai</p>
+			<p>Seaton, J. X, Traves, J., McCalla, G. & Schwier, R. (2013). Designing an Incentive-Based Online Education System to
+			Encourage Student Collaboration. In Jan Herrington et al. (Eds.), Proceedings of World Conference on Educational
+			Multimedia, Hypermedia and Telecommunications 2013 (pp. 1364-1371). Chesapeake, VA: AACE.</p>
+
+			<h3>PRESENTATIONS</h3>
+
+			<h4>KEYNOTE</h4>
+			<p>Seaton, J. X (2015). The importance of research dissemination for theory and practice. The University of Saskatchewan
+			Celebration of Research 2015. Saskatoon, SK.</p>
+
+			<h4>INVITED TALKS</h4>
+			<p>Seaton, J. X (2014). Online Instructors at the University of Regina: Who are they and are they Satisfied? University of
+			Regina.</p>
+
+			<h4>CONFERENCE PRESENTATIONS</h4>
+			<p>Seaton, J. X, Schwier, R. (2014). Engagement, Satisfaction, and Time Management Skills of Online Instructors. COHERE
+			2014</p>
+			<p>Boden, C., Seaton, J. X, & Nelison, C. (2014). Screen-capture tutorials: How well do students learn from them? CHLA/ABSC
+			2014: Scaling New Heights Together</p>
+			<p>Hirschkorn, M., Sears, A., Lemisko, L., Seaton, J. (2014, May). The Struggle to Study Teacher Education Nationally.
+			CSSE/SCÉÉ 2014.</p>
+			<p>Morrison, D., Seaton, J. (2014, February). DIY Forums: Exploring SDL, Participation Patterns and Content for Emergent
+			VLCs. International Society for Self-Directed Learning. Cocoa Beach, FL.</p>
+			<p>Seaton, J. X (May 2013). A case study of online instructors: Identifying challenges. TLT 2013: Everyone is doing IT</p>
+			<p>Boden, C., Nelison, C., & Seaton, J. X (2012). Methodology for examining the efficacy of screen-capture tutorials: A
+			pilot study. CHLA/ABSC 2012: Cascade of Knowledge</p>
+			<p>Schwier, R.A., & Seaton, J. X (2011). A comparison of participation patterns in selected formal, non-formal, and
+			informal online learning environments. Proceedings of the Annual Conference of the Association for Educational
+			Communications and Technology.</p>
+			<p>Seaton, J. (2008). Struggling with Our Own Ethnicity: The Lack of North American Ethnic Identity. Presented at the
+			University of Lethbridge for an Interdisciplinary Conference (Ethnicity: Theory and Practice in the 21st Century, Sept
+			2008)</p>
+
+			<h4>POSTERS</h4>
+			<p>Hunter, P.; Seaton, J.; Delbaere, M.; O’Connell, M.; Cammer, A.; Friedrich, T.; Fick, F. (2016). Did they get it right?
+			The extent and quality of internet-based information about the role of lifestyle in cognitive health. CPA Annual
+			Convention</p>
+			<p>Friedrick T., Seaton J., Hunter P., Elias L., O’Connell M., Delbaere M., Cammer A. (2015). Research Protocol: Evaluation
+			of Alzheimer Organizations’ Websites with Eye Tracking. Knowledge Network in Rural and Remote Dementia Care Summit 8</p>
+			<h3>AWARDS AND HONOURS</h3>
+			<p>2016 Nominated for Teaching Excellence Award at the University of Saskatchewan (Student Nominated)</p>
+			<p>2008 Queen Elisabeth II Graduate Student Scholarship ($3,600)</p>
+			<p>2003 Spirit of Leadership at Mount Royal Award</p>
+			
+			<!-- TEACHING -->
+
+			<h4>TEACHING EXPERIENCE</h4>
+
+			<p class="subtitle noSpace">Saskatchewan Polytechnic</p>
+			<p class="noSpace">Website Development (HTML & CSS)</p>
+			<p class="noSpace">Internet Programming and Web Apps 1 (JavaScript feat. JQuery)</p>
+			<p class="noSpace">Internet Programming and Web Apps 2 (JavaScript feat. React & Node & document no-SQL databases)</p>
+			<p class="noSpace">Software Development Fundamentals (UX, Scrum, & Git)</p>
+			<p class="noSpace">Database Management Systems (MySQL)</p>
+			<p class="noSpace">Capstone Project</p>
+			<br />
+			<p class="subtitle noSpace">Juno College</p>
+			<p class="noSpace">Web Development Bootcamp (HTML, CSS, & JavaScript feat. React)</p>
+			<p class="noSpace">Introduction to Web Development (HTML & CSS)</p>
+			<p class="noSpace">Introduction to JavaScript (JavaScript feat. JQuery)</p>
+			<p class="noSpace">Data Analytics Bootcamp (Excel, SQL, Tableau, & Python)</p>
+			<p class="noSpace">Introduction to Data Analytics (Excel, SQL, & Tableau)</p>
+			<br />
+			<p class="subtitle noSpace">University of Saskatchewan</p>
+			<p class="noSpace">Introduction to Computer Science and Programming (Python)</p>
+			<p class="noSpace">Introduction to Computer Science and Programming (C++)</p>
+			<p class="noSpace">Principles of Programming (C++)</p>
+			<p class="noSpace">Introduction to Computing (Scratch)</p>
+			<p class="noSpace">Learning to Learn: Strategies for Academic Success</p>
+			<p class="noSpace">Digital Document Processing (Microsoft Office)</p>
+			<p class="noSpace">Graduate Level Course in Foundations of Education (Learning Facilitator)</p>
+		</div>
 	</div>
 </body>
 </html>
