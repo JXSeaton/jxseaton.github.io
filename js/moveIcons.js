@@ -85,8 +85,9 @@ function makeDivObjects(){
     }
 }
 
-// checking if the document is ready
-if (matchMedia('(pointer:fine)').matches) {
-	makeDivObjects();
-	document.addEventListener("mousemove", moveMe);
-}  
+if(window.innerWidth > 1080){
+    if (matchMedia('(pointer:fine)').matches) {
+        makeDivObjects();
+        document.addEventListener("mousemove", moveMe);
+    }  
+}

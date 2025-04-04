@@ -16,9 +16,6 @@ div > i {
     height: 50px;
     padding-top: 5px;
 }
-.me{
-    width:50%;
-}
 h1 {
     position: relative;
     margin-top: 30%;
@@ -49,12 +46,8 @@ h1:hover::after{
 		background: #F2BB05;
 		z-index: -1;
 }
-.container {
-    display: flex;
-}
 
 div#skills>div {
-	position: absolute;
 	width: 60px;
 	height: 60px;
 	border-radius: 10px;
@@ -108,12 +101,32 @@ a:visited{
 	color: #776871;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1079px) {
 	#skills{
-		display: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.me {
 		width: 100%;
+	}
+	div#skills>div {
+		background-color: #FF078B;
+		margin: 2px;
+	}
+	div#skills>div:hover {
+		background-color: #F2BB05;
+	}
+}
+@media screen and (min-width: 1080px) {
+	.container {
+		display: flex;
+	}
+	.me{
+		width:50%;
+	}
+	div#skills>div {
+		position: absolute;
 	}
 }
 

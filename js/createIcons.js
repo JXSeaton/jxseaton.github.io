@@ -3,8 +3,8 @@ const iconColors = ['#17BEBB', '#F2BB05', '#FF078B'];
 const positions = [];
 
 function getRandPosition(){
-	const left = Math.floor((Math.random() * (screen.width - screen.width * 0.5)) + (screen.width * 0.4));
-	const top = Math.floor((Math.random() * (screen.height - screen.height * 0.3)) + (screen.height * 0.1));
+	const left = Math.floor((Math.random() * (window.innerWidth - window.innerWidth * 0.5)) + (window.innerWidth * 0.4));
+	const top = Math.floor((Math.random() * (window.innerHeight - window.innerHeight * 0.3)) + (window.innerHeight * 0.1));
 	
 	let notOverlap = true;
 	for(let i = 0; i < positions.length; i++){
@@ -25,13 +25,15 @@ function getRandPosition(){
 	}
 }
 
-for(let i = 0; i < icons.length; i++){
-	icons[i].style.backgroundColor = iconColors[i % 3];
-	let randPosition = getRandPosition();
-	while(!randPosition){
-		randPosition = getRandPosition();
+if(window.innerWidth > 1080){
+	for(let i = 0; i < icons.length; i++){
+		icons[i].style.backgroundColor = iconColors[i % 3];
+		let randPosition = getRandPosition();
+		while(!randPosition){
+			randPosition = getRandPosition();
+		}
+		positions.push(randPosition);
+		icons[i].style.left = randPosition[0] + "px";
+		icons[i].style.top = randPosition[1] + "px";
 	}
-	positions.push(randPosition);
-	icons[i].style.left = randPosition[0] + "px";
-	icons[i].style.top = randPosition[1] + "px";
 }
