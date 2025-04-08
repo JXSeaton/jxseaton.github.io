@@ -5,6 +5,10 @@
 	font-weight: 200;
 }
 
+a.project-link:link, a.project-link:visited, a.project-link:active {
+	color: white;
+}
+
 /* code from co-pilot because i hate centering vertically!! */
 main#projects {
     display: flex;
@@ -20,6 +24,7 @@ main#projects {
 .slideContainer {
 	position: relative;
 	width: 80%;
+	max-width: 1080px;
 	margin: auto;
 	overflow: hidden;
 }

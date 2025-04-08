@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NECSUS</title>
+	<link rel="stylesheet" href="../css/base.css" />
+	<link rel="stylesheet" href="../css/projectDescriptions.css">
+	<script src="../js/projectDescription.js" defer></script>
+</head>
+<body>
+	<!-- This page generated with the help of Claude. Gave it a chapter of my reseach to summarize. I made minor edtis to the content and styling to better align with the overall design of the website. Overall, Claude seems to do fairly well at creating static websites with fairly user friendly design. But the timeline was a mess! No javascript was included either. -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="../cv.html">CV</a></li>
+				<li><a href="../writings.html">Writing</a></li>
+				<li><a href="../projects.html">Projects</a></li>
+			</ul>
+		</nav>
+	</header>
+	<nav class="animated-line" >
+        <div class="container">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#design">Design Process</a></li>
+                <li><a href="#features">Key Features</a></li>
+                <li><a href="#research">Research Findings</a></li>
+                <li><a href="#impact">Impact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="overview">
+		<div class="section-title">
+			<h2>Project Overview</h2>
+			<p>NECSUS is an advanced learning technology designed to test whether student engagement can be increased without teacher presence in online education.</p>
+		</div>
+		
+		<div class="two-column">
+			<div class="feature-content">
+				<h3>The Challenge</h3>
+				<p>GSR 960, a graduate ethics course at the University of Saskatchewan, was designed to be taken online with minimal student-teacher interaction. The course is short, pass/fail, and text-based.</p>
+				<p>The research question: <strong>Can we build a system that encourages student engagement and high-order thinking without the presence of an instructor?</strong></p>
+				
+				<h3>Key Innovations</h3>
+				<ul class="feature-list">
+					<li>Game-inspired friendship mechanics</li>
+					<li>Test challenge feature enabling peer assessment</li>
+					<li>Social network visualization for course navigation</li>
+					<li>Strategic interdependence through collaborative challenges</li>
+				</ul>
+			</div>
+			<div class="feature-image">
+				<img src="../img/necsus-overview.png" alt="NECSUS overview visualization" style="width:100%; height:auto;">
+			</div>
+		</div>
+    </section>
+    
+    <section id="problem">
+		<div class="section-title">
+			<h2>Research Context</h2>
+			<p>Examining the Community of Inquiry framework and its limitations in online learning environments</p>
+		</div>
+		
+		<div class="research-grid">
+			<div class="research-card">
+				<h4>Community of Inquiry Model</h4>
+				<p>The conceptual framework argues that community supports higher-order thinking through three presences:</p>
+				<ul>
+					<li><strong>Teacher Presence:</strong> Structuring and facilitating discourse</li>
+					<li><strong>Social Presence:</strong> Projection of personal characteristics</li>
+					<li><strong>Cognitive Presence:</strong> Construction of meaning through communication</li>
+				</ul>
+				<p>Some researchers argue that without teacher presence, students will not engage in substantial discourse.</p>
+			</div>
+			
+			<div class="research-card">
+				<h4>The Research Gap</h4>
+				<p>If the Community of Inquiry model were comprehensive, we would expect:</p>
+				<ul>
+					<li>No signs of Community of Inquiry in a course without instructor presence</li>
+					<li>No evidence of higher-order thinking</li>
+					<li>Limited student engagement and discussion</li>
+				</ul>
+				<p>NECSUS aimed to test these assumptions through gamified social mechanics.</p>
+			</div>
+		</div>
+    </section>
+    
+    <section id="design">
+		<div class="section-title">
+			<h2>Design Process</h2>
+			<p>An iterative approach to designing and refining game-inspired mechanics for educational engagement</p>
+		</div>
+		
+		<div class="timeline">
+			<div class="timeline-item left">
+				<div class="timeline-content">
+					<h3>Initial Concept</h3>
+					<p>Inspired by game dynamics found in The Sims, EverQuest, and Farmville which all explicitly require strategic friendships.</p>
+				</div>
+			</div>
+			<div class="timeline-item right">
+				<div class="timeline-content">
+					<h3>First Prototype</h3>
+					<p>Developed core features: friendship system, navigation map, and test challenge feature. Tested with 13 graduate students in Fall 2012.</p>
+				</div>
+			</div>
+			<div class="timeline-item left">
+				<div class="timeline-content">
+					<h3>Key Finding</h3>
+					<p>Sparse usage meant students weren't in close enough temporal proximity to interact. The test challenge feature was the most successful aspect.</p>
+				</div>
+			</div>
+			<div class="timeline-item right">
+				<div class="timeline-content">
+					<h3>Redesign</h3>
+					<p>Added "Practice Area" with ethical questions, implemented a scoring system and Kobayashi Maru challenge, and enhanced social presence elements.</p>
+				</div>
+			</div>
+			<div class="timeline-item left">
+				<div class="timeline-content">
+					<h3>Final Testing</h3>
+					<p>Tested with two groups of students (26 total) in Winter 2013 to measure improved engagement and higher-order thinking.</p>
+				</div>
+			</div>
+        </div>
+    </section>
+    
+    <section id="features">
+		<div class="section-title">
+			<h2>Key Features</h2>
+			<p>Game-inspired mechanics designed to foster community and engagement</p>
+		</div>
+		
+		<div class="tabs">
+			<div class="tab" data-tab="friendship">Friendship System</div>
+			<div class="tab" data-tab="map">Navigation Map</div>
+			<div class="tab" data-tab="challenge">Test Challenge</div>
+			<div class="tab" data-tab="practice">Practice Area</div>
+		</div>
+		
+		<div class="tab-content active" id="friendship">
+			<div class="two-column">
+				<div class="feature-content">
+					<h3>Strategic Social Relationships</h3>
+					<p>Inspired by The Sims, the friendship system required social grooming to maintain connections:</p>
+					<ul class="feature-list">
+						<li>Students began with full friendship with all other students (900 points)</li>
+						<li>Friendship points deteriorated over time (3 points per hour)</li>
+						<li>Social interactions (replies, likes, profile visits) added approximately two days to the friendship</li>
+						<li>When friendship fell below threshold (500 points), friends disappeared from the map</li>
+						<li>Students could only see forum posts from people they were friends with</li>
+					</ul>
+					<p>This system encouraged ongoing engagement and reciprocal interaction between students.</p>
+				</div>
+				<div class="feature-image">
+					<img src="../img/social-features.png" alt="Friendship system visualization" style="width:100%; height:auto;">
+				</div>
+			</div>
+		</div>
+		
+		<div class="tab-content" id="map">
+			<div class="two-column">
+				<div class="feature-image">
+					<img src="../img/map-features.png" alt="Navigation map visualization" style="width:100%; height:auto;">
+				</div>
+				<div class="feature-content">
+					<h3>Social Navigation Map</h3>
+					<p>A visual representation of the course content with an overlay of the student's social network:</p>
+					<ul class="feature-list">
+						<li>Course content displayed as interconnected nodes</li>
+						<li>Friends appeared on the map, indicating the social nature of learning</li>
+						<li>Health points system affected map visibility (fading when inactive)</li>
+						<li>Discussion links indicated number of active threads</li>
+						<li>Visual feedback encouraged regular participation</li>
+					</ul>
+					<p>This design highlighted the social aspects of the course, unlike traditional LMS platforms that aren't designed to support social awareness.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="tab-content" id="challenge">
+			<div class="two-column">
+				<div class="feature-content">
+					<h3>Test Challenge Feature</h3>
+					<p>A mechanism that created interdependence among students and enabled peer assessment:</p>
+					<ul class="feature-list">
+						<li>Students could challenge multiple-choice answers marked wrong</li>
+						<li>Challenges required creating a forum post explaining their reasoning</li>
+						<li>If three other students supported the argument (by liking), the challenge was won</li>
+						<li>Only friends could see challenge posts, requiring network maintenance</li>
+						<li>Encouraged higher-order thinking and peer evaluation</li>
+					</ul>
+					<p>This feature successfully demonstrated students could assess each other's understanding without instructor intervention.</p>
+				</div>
+				<div class="feature-image">
+					<img src="../img/challenge.png" alt="Test challenge feature visualization" style="width:100%; height:auto;">
+				</div>
+			</div>
+		</div>
+		
+		<div class="tab-content" id="practice">
+			<div class="two-column">
+				<div class="feature-image">
+					<img src="../img/kobiyashimaru.png" alt="Practice area visualization" style="width:100%; height:auto;">
+				</div>
+				<div class="feature-content">
+					<h3>Practice Area</h3>
+					<p>Added in the second iteration to model desired discussion behavior:</p>
+					<ul class="feature-list">
+						<li>Presented ambiguous ethical questions based on course content</li>
+						<li>Asked students how they would resolve ethical conflicts</li>
+						<li>Two questions automatically posted each week</li>
+						<li>Scoring system awarded 10 points when suggestions received likes</li>
+						<li>Students could trade 30 points for a Kobayashi Maru Challenge</li>
+					</ul>
+					<p>This feature simulated aspects of teacher presence by providing discussion models and encouraging exploration of course concepts.</p>
+				</div>
+			</div>
+		</div>
+    </section>
+    
+    <section id="research">
+		<div class="section-title">
+			<h2>Research Findings</h2>
+			<p>Evidence of higher-order thinking and social presence without instructor interaction</p>
+		</div>
+		
+		<div class="research-grid">
+			<div class="chart-container">
+				<h4>Community of Inquiry Indicators</h4>
+				<img src="../img/coi-results.png" alt="Chart showing Community of Inquiry indicators" style="width:100%; height:auto;">
+			</div>
+			
+			<div class="research-card">
+				<h4>Key Insights</h4>
+				<p>Despite the absence of an instructor, NECSUS successfully fostered:</p>
+				<ul>
+					<li>Evidence of higher-order thinking (Integration and Resolution phases)</li>
+					<li>Social presence through multiple channels (posts, likes, profile customization)</li>
+					<li>Elements of teacher presence through system design</li>
+				</ul>
+				<p>The disparity between cohorts suggested additional factors beyond teacher presence affect student engagement.</p>
+			</div>
+			
+			<div class="research-card">
+				<h4>Student Engagement</h4>
+				<p>Alternative engagement methods emerged:</p>
+				<ul>
+					<li>Profile customization (6 students in Course 1, 7 in Course 2)</li>
+					<li>"Like" feature used by non-posting students</li>
+					<li>Profile walls used for social grooming</li>
+					<li>Test challenges as an outlet to demonstrate learning</li>
+				</ul>
+			</div>
+			
+			<div class="chart-container">
+				<h4>Example: Peer Evaluation</h4>
+				<img src="../img/student-discussion.png" alt="Example of student activity" style="width:100%; height:auto;">
+			</div>
+		</div>
+		
+		<div class="text-center" style="margin-top: 50px;">
+			<p>Despite controlling for teacher presence, the two cohorts showed dramatically different engagement patterns, suggesting student agency plays a critical role in online educational communities.</p>
+		</div>
+    </section>
+	<section id="impact">
+		<div class="section-title">
+			<h2>Impact</h2>
+			<p>NECSUS highlighted the importance of student agency in online learning environments. Given the exact same interface, different groups of students had distinct behavioural patterns. However, it was demonstrated that game dynamics can be utilized to elicit targeted behaviour from students. This indicates that gamification can be leveraged to increase student presence in lieu of teacher presence.</p>
+		</div>
+		
+		<div class="two-column">
+			<div class="feature-content">
+				<h3>Further Work</h3>
+				<p>This design was applied to a online snowmobile saftey course to test whether this solution could be adapted to other online learning environments that lack an instructor supervisor.</p>
+				
+				<h3>Features Adapted</h3>
+				<ul class="feature-list">
+					<li>Game-inspired friendship mechanics</li>
+					<li>Social network visualization for course navigation</li>
+					<li>New Social interactions highlighted when student logs in</li>
+				</ul>
+			</div>
+			<div class="feature-image">
+				<img src="../img/snowmobile.png" alt="NECSUS adaptation for snowmobile course" style="width:100%; height:auto;">
+			</div>
+		</div>
+    </section>
+</body>
+</html>
