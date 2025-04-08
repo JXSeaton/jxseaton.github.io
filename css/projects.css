@@ -19,7 +19,7 @@ main#projects {
 /* slide show below */
 .slideContainer {
 	position: relative;
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
@@ -113,6 +113,12 @@ main#projects {
 	margin: 5px 0 0;
 }
 
-.necsus {
+.case-study {
 	background-color: #f29b05;
+}
+.survey {
+	background-color: #008986;
+}
+.necsus {
+	background-color: #c30068;
 }
