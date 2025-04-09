@@ -76,8 +76,8 @@ main#projects {
 
 .slideDots{
 	position:absolute;
-	left: calc(50% - 34px);
-	right: calc(50% - 34px);
+	left: calc(50% - 50px);
+	right: calc(50% - 50px);
 	bottom: 0;
 	padding-bottom: 5px;
 }
@@ -126,4 +126,7 @@ main#projects {
 }
 .necsus {
 	background-color: #c30068;
+}
+.omega {
+	background-color: #776871;
 }

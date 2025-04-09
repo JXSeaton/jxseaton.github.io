@@ -2,9 +2,9 @@ const tabStyle = "border-bottom-color: #F2BB05; color: black;";
 const tabActiveStyle = "border-bottom-color: #f29b05; color: #f29b05;";
 
 const tabs = document.getElementsByClassName("tab");
-let activeTab = "friendship";
+let activeTab = tabs[0].dataset.tab;
 document.getElementById(activeTab).style.display = "block";
-document.querySelector('div[data-tab="friendship"]').style.cssText = tabActiveStyle;
+document.querySelector(`div[data-tab="${activeTab}"]`).style.cssText = tabActiveStyle;
 
 function swtichTab(){
 	document.querySelector(`div[data-tab="${activeTab}"]`).style.cssText = tabStyle;
